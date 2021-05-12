@@ -12,6 +12,16 @@
         <li class="c-sidebar-nav-item">
             <x-utils.link
                 class="c-sidebar-nav-link"
+                :href="route('admin.entries')"
+                :active="activeClass(Route::is('admin.entries'), 'c-active')"
+                icon="c-sidebar-nav-icon cil-notes"
+                :text="__('Entries')" />
+        </li>
+
+    <ul class="c-sidebar-nav">
+        <li class="c-sidebar-nav-item">
+            <x-utils.link
+                class="c-sidebar-nav-link"
                 :href="route('admin.dashboard')"
                 :active="activeClass(Route::is('admin.dashboard'), 'c-active')"
                 icon="c-sidebar-nav-icon cil-speedometer"

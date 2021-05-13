@@ -13,6 +13,9 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="{{ mix('css/frontend.css') }}" rel="stylesheet">
+    <link href="{{ url('packages/jquery-steps/jquery.steps.css') }}" rel="stylesheet">
+    <link href="{{ url('packages/css/custom.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <livewire:styles />
     @stack('after-styles')
 </head>
@@ -31,9 +34,13 @@
     </div><!--app-->
 
     @stack('before-scripts')
+
     <script src="{{ mix('js/manifest.js') }}"></script>
     <script src="{{ mix('js/vendor.js') }}"></script>
     <script src="{{ mix('js/frontend.js') }}"></script>
+    <script src="https://unpkg.com/feather-icons.js"></script>
+    <script src="{{ url('packages/jquery-validation/jquery.validate.min.js') }}"></script>
+    <script src="{{ url('packages/jquery-steps/jquery.steps.min.js') }}"></script>
     <livewire:scripts />
     @stack('after-scripts')
 </body>
